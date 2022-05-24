@@ -136,11 +136,11 @@ class Game extends Phaser.Scene
     }
     update(){
         if(cursors.right.isDown){
-            player.setVelocityX(300);
+            player.setVelocityX(100);
             player.anims.play('right',true);
         }
         else if(cursors.left.isDown){
-            player.setVelocityX(-300);
+            player.setVelocityX(-100);
             player.anims.play('left',true);
             
         }else

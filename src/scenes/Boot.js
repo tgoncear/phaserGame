@@ -24,7 +24,7 @@ class Boot extends Phaser.Scene{
         startGame.on('pointerdown',()=>{this.scene.start('GameScene')});
         const github = this.add.text(this.sys.game.canvas.width / 2 - title.width / 6 +100, this.sys.game.canvas.height / 2 + title.height + 200, 'GITHUB', { fill: '#0f0' }).setFontSize(100);
         github.setInteractive();
-        github.on('pointerdown',()=>{window.open("https://www.iloveimg.com/es/descarga/yglnh2fd6b6xwv80g8d70jzjvszw5Aj11sr7rl2xf1s6ffv706254b641yn63lbf07hcgcA9nzkjAtb6l2n1r3dkvkn9thdv5n89tl7rgAmb3tlq4kvj2btdr92r51j35h74kzhfkclh83Afrb5wlAwp3q1cvfjr48b9sld9h9wl7lcpvv6q/9")});
+        github.on('pointerdown',()=>{window.open("https://github.com/tgoncear/phaserGame")});
       }
 }
 var title;
