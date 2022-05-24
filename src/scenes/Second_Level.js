@@ -9,12 +9,12 @@ class Second_Level extends Phaser.Scene{
     preload ()
     {
 
-        this.load.image('base_tiles','src/assets/sheet_map.png');
+        this.load.image('base_tiles','assets/sheet_map.png');
         this.add.text(this.sys.game.canvas.width / 2  -700, this.sys.game.canvas.height/2 -125, 'GAME OVER', { fontFamily: 'ARIAL',fontStyle:'bold' }).setFontSize(250);
         this.load.tilemapTiledJSON('map',map);
-        this.load.image('enemi','src/assets/smile.png');
-        this.load.image('live','src/assets/lives.png');
-        this.load.image('star','src/assets/star.png');
+        this.load.image('enemi','assets/smile.png');
+        this.load.image('live','assets/lives.png');
+        this.load.image('star','assets/star.png');
         this.load.spritesheet('dude', 
         'src/assets/player_movement.png',
         { frameWidth: 45, frameHeight: 78 }
