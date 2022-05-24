@@ -12,6 +12,7 @@ class Second_Level extends Phaser.Scene{
         this.load.image('base_tiles','assets/sheet_map.png');
         this.add.text(this.sys.game.canvas.width / 2  -700, this.sys.game.canvas.height/2 -125, 'GAME OVER', { fontFamily: 'ARIAL',fontStyle:'bold' }).setFontSize(250);
         this.load.tilemapTiledJSON('map',map);
+        this.load.audio("musica",["assets/musica.mp3"]);
         this.load.image('enemi','assets/smile.png');
         this.load.image('live','assets/lives.png');
         this.load.image('star','assets/star.png');
@@ -25,6 +26,7 @@ class Second_Level extends Phaser.Scene{
     } 
     create ()
     {
+        this.sound.add("musica",{loop:true});
         scene = this.scene;
         cursors = this.input.keyboard.createCursorKeys();
         scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
